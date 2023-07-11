@@ -109,8 +109,7 @@ div li {
 .feature-text {
   align-items: center;
   border-radius: 300px 300px 0px 0px;
-  background-color: rgba(167, 33, 98, 0.15), rgba(5, 151, 160, 0.15),
-    rgba(71, 125, 17, 0.15);
+  background-color: rgba(167, 33, 98, 0.15), rgba(5, 151, 160, 0.15), rgba(71, 125, 17, 0.15);
   box-shadow: #181818;
   color: #181818;
   text-align: center;
@@ -125,9 +124,27 @@ div li {
   align-items: center;
 }
 
-.feature-special {
+.feature-special .feature-special-container {
   margin-top: 50px;
   display: flex;
   justify-content: center;
   padding: 130px;
+}
+
+.skill{
+    display: flex;
+}
+
+footer{
+    margin: 200px;
+}
+.hot-deals{
+    margin: auto;
+    background-color: #fff8f3;
+}
+div.feature{
+    background-color: #e55473;
+}
+nav{
+    display: inline;
 }
