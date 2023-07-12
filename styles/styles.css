@@ -1,6 +1,24 @@
-/* common shared style  */
+/* Style for Whole Website  */
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: "Lato", sans-serif;
+}
+
+
+.btn-primary {
+  display: inline-flex;
+  padding: 20px 43px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 8px;
+  background: #e55473;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+  border: none;
 }
 
 .section-title {
@@ -17,134 +35,243 @@ body {
   font-weight: 400;
   line-height: 30px;
 }
-
-/* header realted styles */
-.header {
-  /* width: 1920px;
-  height: 850px; */
-  background-color: rgba(229, 84, 115, 0.1);
+/* navigation Related Styles  */
+nav {
+  display: flex;
+  justify-content: center;
+  margin: 0 170px;
 }
-.main {
+/* imidiate child  */
+
+nav > ul {
+  display: flex;
+}
+/* imidiate na  */
+nav li {
+  list-style: none;
+  margin-right: 50px;
+}
+
+/* Nav er bethor er anchor */
+nav a {
+  text-decoration: none;
+  color: darkcyan;
+}
+
+/* Heading Related Style  */
+.header {
+  background-color: #e554731a;
+}
+
+.content {
+  padding: 0 200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 50px 30px 0px 240px;
-}
-.main-content {
-  max-width: 500px;
-  margin-bottom: 30px;
-}
-.main .main-pic {
-  width: 500px;
-  padding-top: 50px;
 }
 
-.main-heading {
-  color: #272727;
-  font-size: 80px;
-  margin-bottom: 32px;
+.content-items {
+  max-width: 600px;
 }
-.main-description {
+.content .main-pic {
+  width: 500px;
+}
+.content-title {
+  font-size: 80px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+.content-description {
   color: rgba(39, 39, 39, 0.6);
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
+  margin-bottom: 30px;
 }
 
-.btn-primary {
-  display: inline-flex;
-  padding: 20px 43px;
-  align-items: flex-start;
-  gap: 10px;
-  border-radius: 8px;
-  background: #e55473;
-}
-
-/* .main-heading {
-  display: flex;
-  width: 708px;
-  flex-direction: column;
- 
-} */
-/* main section styles  */
-main {
-  width: 1920px;
-  height: 4867px;
-}
-main section {
-  margin-top: 130px;
-}
-.feature-pic {
-  display: flex;
-}
-
-/* div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 200px;
-}
-div>ul{
-    
-    display: flex;
-    align-items: center;
-}
-div li {
-    list-style: none;
-    margin-right: 50px;
-} */
-/* feature section style  */
+/* feature section  */
 .feature {
-  padding: 130px;
-  border-radius: 10px;
-  background: #fff8f3;
-  margin: 130px 240px;
+  background-color: #fff;
+  margin: 170px;
 }
-.feature-container {
-  display: flex;
-  justify-content: space-around;
-  padding: 0 240px;
-  gap: 24px;
-}
-.feature-text {
-  align-items: center;
-  border-radius: 300px 300px 0px 0px;
-  background-color: rgba(167, 33, 98, 0.15), rgba(5, 151, 160, 0.15), rgba(71, 125, 17, 0.15);
-  box-shadow: #181818;
-  color: #181818;
-  text-align: center;
-  font-size: 15px;
-  font-weight: 700;
-  align-items: center;
-}
-.feature-image {
+.cover-box {
+  justify-content: center;
   display: flex;
 }
-.feature-info {
-  align-items: center;
-}
+.cover {
+  width: 464px;
+  height: 538px;
 
-.feature-special .feature-special-container {
-  margin-top: 50px;
   display: flex;
   justify-content: center;
-  padding: 130px;
+  gap: 30px;
+}
+.box {
+  margin: 10px;
+  /* width: 500px;
+height: 200px; */
+  margin-top: 10px;
+  padding: 67px 75px;
+  box-shadow: -1px 0 10px #000000;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #272727;
+  text-align: center;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35px;
+  text-decoration-line: underline;
+  border-radius: 300px 300px 0px 0px;
+  background-color: rgba(167, 33, 98, 0.15), rgba(71, 125, 17, 0.15),
+    rgba(5, 151, 160, 0.15);
+}
+.box-img {
+  width: 314px;
+  height: 400px;
+  display: flex;
 }
 
-.skill{
-    display: flex;
+/* Facilities */
+.facilities-container {
+  width: 1440px;
+  height: 320px;
+  border-radius: 8px;
+  background: rgba(39, 39, 39, 0.05);
+  gap: 100px;
+
+  align-items: center;
+  display: flex;
+  margin: 240px;
+  justify-content: center;
 }
 
-footer{
-    margin: 200px;
+.facilities {
+  color: rgba(39, 39, 39, 0.8);
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 35px;
 }
-.hot-deals{
-    margin: auto;
-    background-color: #fff8f3;
+
+.facilities-img {
+  width: 88px;
+  height: 88px;
 }
-div.feature{
-    background-color: #e55473;
+
+/* Hot deals  */
+.hot-deals-container {
+  background-color: #e554730d;
+  border-radius: 8px;
+  justify-content: space-between;
+  padding: 200px 400px;
+  Rectangle 6
+width: 1922px;
+height: 620px;
 }
-nav{
-    display: inline;
+
+.hot-deals {
+  color: #272727;
+  font-size: 40px;
+  font-weight: 800;
+}
+.hot-deal-description {
+  width: 594px;
+  flex-direction: column;
+  color: #27272799;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 20px;
+  display: flex;
+}
+.hot-deal-content {
+  justify-content: space-between;
+  text-align: center;
+  display: flex;
+  width: 500px;
+  height: 420px;
+  align-items: center;
+  gap: 100px;
+}
+
+/* social media  */
+
+.social-media{
+    display:inline ;
+    text-align: center;
+    align-items: center;
+    margin: 130px 240px;
+}
+
+.social-media-description{
+    text-align: center;
+    color: rgba(39, 39, 39, 0.60);
+text-align: center;
+font-size: 18px;
+font-weight: 400;
+line-height: 30px;
+margin-top: 20px;
+margin-bottom: 50px;
+}
+
+.lates-deals{
+    width: 1440px;
+height: 449px;
+margin: 130px 240px;
+border-radius: 8px;
+background-color: pink;
+padding: 30px;
+background-image: url(../Rectangle\ 9.png);
+background-repeat: no-repeat;
+}
+
+.latest-deal-content{
+    text-align: center;
+    align-items: center;
+    margin: 130px;
+}
+.latest-deal-description{
+    color: rgba(39, 39, 39, 0.60);
+text-align: center;
+font-size: 18px;
+font-weight: 400;
+line-height: 30px;
+margin-top:20px ;
+margin-bottom: 50px;
+}
+input{
+    width: 700px;
+height: 64px;
+}
+
+/* Footer  */
+.footer-container{
+    width: 1922px;
+height: 449px;
+background-color: #111010;
+padding: 100px;
+padding-top: 50px;
+
+}
+.footer-title{
+    color: #E55473;
+font-size: 48px;
+font-weight: 800;
+text-align: center;
+}
+.footer-description{
+    color:#FFFFFFE5;
+text-align: center;
+font-size: 18px;
+font-weight: 400;
+line-height: 30px;
+}
+.footer-copywrite{
+    color: #FFFFFF66;
+text-align: center;
+font-size: 16px;
+font-weight: 400;
 }
